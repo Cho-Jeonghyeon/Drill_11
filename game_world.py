@@ -56,7 +56,7 @@ def collide(a, b):
 
     return True
 
-collision_pairs = {} #ket: (param, param1), value: [(obj1, obj2), ...]
+collision_pairs = {} #key: (param, param1), value: [(obj1, obj2), ...]
 # 키 : 충돌 종류, 값 : [[a], [b], ...]
 
 def add_collision_pair(group, a, b):
@@ -76,4 +76,5 @@ def handle_collisions():
                 if collide(a, b):
                     a.handle_collision(group, b)
                     b.handle_collision(group, a)
+
 

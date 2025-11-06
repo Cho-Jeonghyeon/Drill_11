@@ -1,7 +1,5 @@
 import random
-import math
 import game_framework
-import game_world
 
 from pico2d import *
 
@@ -33,10 +31,13 @@ class Zombie:
         self.load_images()
         self.frame = random.randint(0, 9)
         self.dir = random.choice([-1,1])
+        self.width = 200
+        self.height = 200
+
 
 
     def get_bb(self):
-        return self.x - 70, self.y - 75, self.x + 70, self.y + 85
+        return self.x - 65, self.y - 100, self.x + 65, self.y + 72
 
     def update(self):
         self.frame = (self.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % FRAMES_PER_ACTION
