@@ -33,7 +33,7 @@ class Zombie:
         self.dir = random.choice([-1,1])
         self.width = 200
         self.height = 200
-
+        self.hit_count = 0
 
 
     def get_bb(self):
@@ -60,3 +60,11 @@ class Zombie:
     def handle_event(self, event):
         pass
 
+    def handle_collision(self, group, other):
+        if group == 'ball:zombie':
+            if not other.stopped:
+                self.hit_count += 1
+                if self.hit_count == 1:
+                    self.width //= 2
+                    self.height //= 2
+                elif self.hit_count >= 2:
