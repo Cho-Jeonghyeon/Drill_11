@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="hit_count 변수 생성, 좀비 handle_collision 함수 생성(멈춰있고, 히트카운트 고려)" />
+    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762426368287</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료.">
+      <option name="closed" value="true" />
+      <created>1762426452530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762426452530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +119,7 @@
     <MESSAGE value="A 에 boy추가 후 B에 각 좀비들 추가" />
     <MESSAGE value="멈춘 공을 좀비와 충돌 무시" />
     <MESSAGE value="hit_count 변수 생성, 좀비 handle_collision 함수 생성(멈춰있고, 히트카운트 고려)" />
-    <option name="LAST_COMMIT_MESSAGE" value="hit_count 변수 생성, 좀비 handle_collision 함수 생성(멈춰있고, 히트카운트 고려)" />
+    <MESSAGE value="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
+    <option name="LAST_COMMIT_MESSAGE" value="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
   </component>
 </project>
