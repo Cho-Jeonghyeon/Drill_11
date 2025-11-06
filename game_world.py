@@ -62,7 +62,7 @@ collision_pairs = {} #ket: (param, param1), value: [(obj1, obj2), ...]
 def add_collision_pair(group, a, b):
     if group not in collision_pairs:
         print(f'Added new group {group}')
-    collision_pairs[group] = [[], []]
+        collision_pairs[group] = [[], []]
     if a:
         collision_pairs[group][0].append(a)
     if b:

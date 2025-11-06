@@ -175,13 +175,13 @@ class Boy:
     def fire_ball(self):
         if self.ball_count > 0:
             self.ball_count -= 1
-            ball = Ball(self.x+self.face_dir*40, self.y+70, self.face_dir * 15)
+            ball = Ball(self.x+self.face_dir*40, self.y+60, self.face_dir * 15)
             game_world.add_object(ball, 1)
             game_world.add_collision_pair('grass:ball', None, ball)
             game_world.add_collision_pair('boy:ball', None, ball)
 
     def get_bb(self):
-        return self.x - 20, self.y - 20, self.x + 20, self.y + 20
+        return self.x - 20, self.y - 40, self.x + 20, self.y + 40
 
     def handle_collision(self, group, other):
         if group == 'boy:ball':
