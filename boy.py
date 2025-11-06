@@ -136,6 +136,7 @@ class Run:
 class Boy:
     def __init__(self):
 
+        self.stopped = None
         self.ball_count = 10
 
         self.font = load_font('ENCR10B.TTF', 16)
@@ -186,6 +187,3 @@ class Boy:
     def handle_collision(self, group, other):
         if group == 'boy:ball':
             self.ball_count += 1
-        elif group == 'ball:zombie':
-            if not self.stopped:  # 멈춘 공은 무시
-                game_world.remove_object(self)
