@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
+    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="좀비 이미지 크기 반영">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boy.py" beforeDir="false" afterPath="$PROJECT_DIR$/boy.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762426452530</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="좀비 이미지 크기 반영">
+      <option name="closed" value="true" />
+      <created>1762426699470</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762426699470</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +131,7 @@
     <MESSAGE value="멈춘 공을 좀비와 충돌 무시" />
     <MESSAGE value="hit_count 변수 생성, 좀비 handle_collision 함수 생성(멈춰있고, 히트카운트 고려)" />
     <MESSAGE value="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
-    <option name="LAST_COMMIT_MESSAGE" value="좀비가 2번 공에 맞으면 제거, 소년과 좀비와 부딪히면 게임 종료." />
+    <MESSAGE value="좀비 이미지 크기 반영" />
+    <option name="LAST_COMMIT_MESSAGE" value="좀비 이미지 크기 반영" />
   </component>
 </project>
