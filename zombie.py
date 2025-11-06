@@ -36,7 +36,7 @@ class Zombie:
         self.width = 200
         self.height = 200
         self.hit_count = 0
-
+        self.hit_timer = 0
 
     def get_bb(self):
         return self.x - 65, self.y - 100, self.x + 65, self.y + 72
@@ -50,7 +50,8 @@ class Zombie:
             self.dir = 1
         self.x = clamp(800, self.x, 1600)
         pass
-
+        if self.hit_timer > 0:
+            self.hit_timer -= game_framework.frame_time
 
     def draw(self):
         if self.dir < 0:
@@ -64,8 +65,9 @@ class Zombie:
 
     def handle_collision(self, group, other):
         if group == 'ball:zombie':
-            if not other.stopped:
+            if not other.stopped and self.hit_timer <= 0:
                 self.hit_count += 1
+                self.hit_timer = 0.3
                 if self.hit_count == 1:
                     self.width //= 2
                     self.height //= 2
