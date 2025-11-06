@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="오류 해결">
+    <list default="true" id="c1d1f585-18c3-487b-85dd-543031ecfe57" name="변경" comment="좀비가 작아졌을때 위치 좌표 보정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zombie.py" beforeDir="false" afterPath="$PROJECT_DIR$/zombie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762439305860</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="좀비가 작아졌을때 위치 좌표 보정">
+      <option name="closed" value="true" />
+      <created>1762440345482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762440345482</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +193,7 @@
     <MESSAGE value="공 삭제 공은 자신이 삭제하게 바꿈" />
     <MESSAGE value="좀비 히트박스 절반으로 바꿈" />
     <MESSAGE value="오류 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="오류 해결" />
+    <MESSAGE value="좀비가 작아졌을때 위치 좌표 보정" />
+    <option name="LAST_COMMIT_MESSAGE" value="좀비가 작아졌을때 위치 좌표 보정" />
   </component>
 </project>
