@@ -3,6 +3,8 @@ import game_framework
 
 from pico2d import *
 
+import game_world
+
 # zombie Run Speed
 PIXEL_PER_METER = (10.0 / 0.3)  # 10 pixel 30 cm
 RUN_SPEED_KMPH = 10.0  # Km / Hour
@@ -68,3 +70,6 @@ class Zombie:
                     self.width //= 2
                     self.height //= 2
                 elif self.hit_count >= 2:
+                    game_world.remove_object(self)
+        elif group == 'boy:zombie':
+            game_framework.quit()
