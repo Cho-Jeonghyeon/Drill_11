@@ -186,3 +186,6 @@ class Boy:
     def handle_collision(self, group, other):
         if group == 'boy:ball':
             self.ball_count += 1
+        elif group == 'ball:zombie':
+            if not self.stopped:  # 멈춘 공은 무시
+                game_world.remove_object(self)
