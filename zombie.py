@@ -40,7 +40,7 @@ class Zombie:
 
     def get_bb(self):
         half_w = self.width // 2 - 10
-        half_h = self.height // 2 - 20
+        half_h = self.height // 2 - 10
         return self.x - half_w, self.y - half_h, self.x + half_w, self.y + half_h
 
     def update(self):
@@ -57,7 +57,7 @@ class Zombie:
 
     def draw(self):
         if self.dir < 0:
-            Zombie.images['Walk'][int(self.frame)].composite_draw(0, 'h', self.x, self.y, 200, 200)
+            Zombie.images['Walk'][int(self.frame)].composite_draw(0, 'h', self.x, self.y, self.width, self.height)
         else:
             Zombie.images['Walk'][int(self.frame)].draw(self.x, self.y, self.width, self.height)
         draw_rectangle(*self.get_bb())
@@ -71,8 +71,11 @@ class Zombie:
                 self.hit_count += 1
                 self.hit_timer = 0.3
                 if self.hit_count == 1:
+                    pre_height = self.height
                     self.width //= 2
                     self.height //= 2
+                    self.y -= (pre_height - self.height) // 2
+
                 elif self.hit_count >= 2:
                     game_world.remove_object(self)
         elif group == 'boy:zombie':
